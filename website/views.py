@@ -63,3 +63,15 @@ def contact(request):
     "whoami":whoami
     }
     return render(request,"contact.html",context)
+
+def contact(request):
+    if request.user.is_authenticated():
+        who=0
+    else:
+        who=1
+    whoami=request.user.username
+    context={
+    "who":who,
+    "whoami":whoami
+    }
+    return render(request,"contact.html",context)
