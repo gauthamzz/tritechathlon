@@ -1,0 +1,108 @@
+{%extends "base.html"%}
+{%block content%}
+<nav class='blue'>
+  <div class="nav-wrapper">
+
+
+    <a href="/" class="brand-logo center"> TriTechnotholon</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {% if who %}
+      <a href='/accounts/login' class="waves-effect blue waves-light btn " role="button">Login</a>
+      <a href='/accounts/register'  class="blue waves-effect waves-light btn" role="button">Register</a>
+      {% else %}
+      <a href='/accounts/logout'  class="blue waves-effect waves-light btn" role="button">Logout</a></li>
+      {% endif %}
+      </br>
+    </ul>
+
+  </div>
+</nav>
+
+<!--<div id="particles">-->
+  <div id="content">
+<div class="card-panel hoverable grey lighten-4">
+    <h5>Hey {{whoami}}!! do you wanna contact the organisers</h5>
+
+<div class ="col-sm-0 col-sm-offset-4">
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg">
+              <span class="card-title">Awesome dude1</span>
+            </div>
+            <div class="card-content">
+              <p>Phone : +91-124135235235235</p>
+            </div>
+            <div class="card-action">
+              <a href="#">facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class ="col-sm-0 col-sm-offset-4">
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg">
+              <span class="card-title">Awesome dude1</span>
+            </div>
+            <div class="card-content">
+              <p>Phone : +91-124135235235235</p>
+            </div>
+            <div class="card-action">
+              <a href="#">facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+    <!--<p>2. RULE 2 </p>-->
+</br>
+
+</div>
+<div class ="col-sm-8 col-sm-offset-3">
+
+
+<a href='/website/rank'  class="black waves-effect waves-light btn" role="button">Current Ranks</a>
+  <a href='https://www.hackerearth.com/challenge/college/tritechnotholon/'  class="black waves-effect waves-light btn" role="button">Event Page</a>
+  <a href='/website/'  class="black waves-effect waves-light btn" role="button">Home</a>
+</div>
+
+
+
+
+    </br></br>
+  </div>
+<!--</div>-->
+
+
+
+ <footer class="page-footer blue">
+       <div class="container">
+         <div class="row">
+           <div class="col l4 offset-l10 s12">
+             <h5 class="white-text">Created by</h5>
+             <ul>
+               <li><a class="grey-text text-lighten-3"> Team Aparoksha</li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="container">
+         © 2017 Aparoksha 2017
+         </div>
+       </div>
+     </footer>
+
+
+
+
+{%endblock content%}

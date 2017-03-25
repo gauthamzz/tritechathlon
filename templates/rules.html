@@ -1,0 +1,81 @@
+{%extends "base.html"%}
+{%block content%}
+<nav class='blue'>
+  <div class="nav-wrapper">
+
+
+    <a href="/" class="brand-logo center"> TriTechnotholon</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {% if who %}
+      <a href='/accounts/login' class="waves-effect blue waves-light btn " role="button">Login</a>
+      <a href='/accounts/register'  class="blue waves-effect waves-light btn" role="button">Register</a>
+      {% else %}
+      <a href='/accounts/logout'  class="blue waves-effect waves-light btn" role="button">Logout</a></li>
+      {% endif %}
+      </br>
+    </ul>
+
+  </div>
+</nav>
+
+<div id="particles">
+  <div id="content">
+<div class="card-panel hoverable grey lighten-4">
+    <h5>Hey {{whoami}}!! Rules for TriTechnotholon</h5>
+
+    <h5>Rules</h5>
+    <p>1. Six hour tech triathlon : coding + web development + design </p>
+    <p>2. Chose whatever order you want to do them in. </p>
+    <p>3. No time restrictions for each part, you can complete all of the three in the given time period</p>
+    <p>4. Only individual participation, no teams are allowed</p>
+    <p>5. You can use which ever language you wish</p>
+    <p>6. Points are given as follows</p>
+    <p> Competitive Coding: 100 Points </p>
+    <p>Graphic Designing: 100 Points</p>
+    <p>Web Development: 200 + 100 (Bonus) = 300 Points></p>
+    <p>Total: 500 Points</p>
+    <p>7. In case of any disbutes organisers decision will be final</p>
+
+    <!--<p>2. RULE 2 </p>-->
+</br>
+
+</div>
+<div class ="col-sm-8 col-sm-offset-3">
+
+
+<a href='/website/rank'  class="black waves-effect waves-light btn" role="button">Current Ranks</a>
+  <a href='https://www.hackerearth.com/challenge/college/tritechnotholon/'  class="black waves-effect waves-light btn" role="button">Event Page</a>
+  <a href='/website/'  class="black waves-effect waves-light btn" role="button">Home</a>
+</div>
+
+
+
+
+    </br></br>
+  </div>
+</div>
+
+
+
+ <footer class="page-footer blue">
+       <div class="container">
+         <div class="row">
+           <div class="col l4 offset-l10 s12">
+             <h5 class="white-text">Created by</h5>
+             <ul>
+               <li><a class="grey-text text-lighten-3"> Team Aparoksha</li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="container">
+         © 2017 Aparoksha 2017
+         </div>
+       </div>
+     </footer>
+
+
+
+
+{%endblock content%}

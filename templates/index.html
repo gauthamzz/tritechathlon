@@ -1,0 +1,145 @@
+{%extends "base.html"%}
+{%block content%}
+<nav class='blue'>
+  <div class="nav-wrapper">
+
+
+    <a href="/" class="brand-logo center"> TriTechnotholon</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {% if who %}
+      <a href='/accounts/login' class="waves-effect blue waves-light btn " role="button">Login</a>
+      <a href='/accounts/register'  class="blue waves-effect waves-light btn" role="button">Register</a>
+      {% else %}
+      <a href='/accounts/logout'  class="blue waves-effect waves-light btn" role="button">Logout</a></li>
+      {% endif %}
+      </br>
+    </ul>
+
+  </div>
+</nav>
+
+<div style="overflow: hidden">
+
+<!--<div id="particles">-->
+  <div id="content">
+<div class="card-panel hoverable grey lighten-4">
+   
+    <h5>Hey {{whoami}}!</h5>
+   
+
+   <!--<div class ="col-sm-10 col-sm-offset-4">
+<img src="http://i.imgsafe.org/6dc267071f.png">
+</div>-->
+    <p> 
+      
+<div class ="col-sm-10 col-sm-offset-1">
+       <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://i.imgsafe.org/6dc267071f.png">
+              <span class="card-title">TriTechathlon</span>
+            </div>
+            <div class="card-content">
+              <p>This is a three phase event,involving Graphics design , competetive coding and web development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+     <div class ="col-sm-10 col-sm-offset-5">
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card center">
+            <div class="card-image">
+              <img src="http://mantthan.com/wp-content/uploads/2017/02/webdesign.jpg">
+              <span class="card-title">Web Design</span>
+            </div>
+            <div class="card-content">
+              <p>Design and implement a website for the tritechathlon event. It should have a homepage, an about page, a register/login page, a scoreboard page, and a contact page. Assume details accordingly.
+Use the logo/banner you designed on the webpage suitably.
+Explain all the rules and the three aspects of the event on about page.
+Bonus:
+Adding backend on registration/login page is optional and will be awarded bonus marks.
+The entries on the scoreboard page should generate as new teams register and their score should be set to 0. User should be able to login and edit his details. Rest is up to you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     </div>
+
+      <div class ="col-sm-10 col-sm-offset-1">
+       <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src=" https://www.ringling.edu/sites/default/files/styles/adaptive/public/GD_word.png?itok=3Ol_Kk7Q">
+              <span class="card-title">Graphic Design</span>
+            </div>
+            <div class="card-content">
+              <p>Design a logo/banner for the event TriTechathlon.
+It should be able to represent the three aspects of the event.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+ <div class ="col-sm-10 col-sm-offset-5">
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src=http://asulug.org/wp-content/uploads/2013/10/code-fu-competition.png>
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>Solve the Competitive coding questions on hackerearth</p>
+            </div>
+            <div class="card-action">
+              <a href="http://hck.re/bF4IV5">Link to competition</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!--<div class ="col-sm-8 col-sm-offset-3">-->
+
+
+<a href='/website/rank'  class="black waves-effect waves-light btn" role="button">Current Ranks</a>
+  <a href='https://www.hackerearth.com/challenge/college/tritechnotholon/'  class="black waves-effect waves-light btn" role="button">Event Page</a>
+  <a href='/website/rules'  class="black waves-effect waves-light btn" role="button">Rules</a>
+  <a href='/website/contact'  class="black waves-effect waves-light btn" role="button">Contact</a>
+<!--</div>-->
+
+
+
+
+  </div>
+
+
+ <footer class="page-footer blue">
+       <div class="container">
+         <div class="row">
+           <div class="col l4 offset-l10 s12">
+             <h5 class="white-text">Created by</h5>
+             <ul>
+               <li><a class="grey-text text-lighten-3"> Team Aparoksha</li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="container">
+         © 2017 Aparoksha 2017
+         </div>
+       </div>
+     </footer>
+
+
+
+
+{%endblock content%}
